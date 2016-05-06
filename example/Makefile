@@ -1,7 +1,7 @@
 PROJECT=bin/Main
 
 SOURCES=src/main.c src/mylib.c
-TESTS=mylib.test
+TESTS=all
 INC=-Isrc/
 
 CC=gcc
