@@ -6,6 +6,7 @@
 // Unit tests for the example library.
 ///////////////////////////////////////////////////////////////////////////////
 
+#define ja_threads 4
 
 #include "janit.h"
 #include "mylib.h"

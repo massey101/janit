@@ -12,7 +12,7 @@ INC += -I../../ # janit.h would normall be in the current directory
 # and therefore wouldn't be needed
 
 CC=gcc
-CFLAGS=-Wall -g
+CFLAGS=-Wall -g -pthread
 
 all: $(TESTS)
 
