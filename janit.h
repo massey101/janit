@@ -38,7 +38,7 @@ int _ja_run_tests(char * (* tests[])(), int num, const char * name) {
         result = tests[i](&func);
         printf("[%s] Test %3u: ", name, i);
         if (result != 0) {
-            printf("%s " JA_RED "Failed: %s\n" JA_RESET, func, result);
+            printf(JA_RED"Failed!"JA_RESET" %s: %s\n", func, result);
             failed++;
         } else {
             printf(JA_GREEN"Pass\n"JA_RESET);
