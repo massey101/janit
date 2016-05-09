@@ -5,6 +5,8 @@
 
 #include <stdio.h>
 
+#define version "v0.1"
+
 // Create test
 #define ja_test(name) static char * name(const char ** _ja_name)
 
@@ -23,6 +25,7 @@
 // Run the tests. Returns 0 for success.
 #define ja_run_tests(name) _ja_run_tests(_ja_tests, TEST_NUM, name)
 
+#define JA_YELLOW "\x1b[33m"
 #define JA_RED "\x1b[31m"
 #define JA_GREEN "\x1b[32m"
 #define JA_RESET "\x1b[0m"
@@ -32,6 +35,8 @@ int _ja_run_tests(char * (* tests[])(), int num, const char * name) {
     char * func;
     int i, success = 0, failed = 0 ;
 
+    printf("Janit Unit Test Suite "version"\n");
+    printf(JA_YELLOW"=============================\n"JA_RESET);
     printf("Running unit tests for %s...\n", name);
 
     for (i = 0; i < num; i++) {
