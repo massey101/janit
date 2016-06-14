@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-#define version "v0.1"
+#define ja_version "v0.2"
 
 // Create test
 #define ja_test(name) static char * name(const char ** _ja_name)
@@ -35,7 +35,7 @@ int _ja_run_tests(char * (* tests[])(), int num, const char * name) {
     char * func;
     int i, success = 0, failed = 0 ;
 
-    printf("Janit Unit Test Suite "version"\n");
+    printf("Janit Unit Test Suite "ja_version"\n");
     printf(JA_YELLOW"=============================\n"JA_RESET);
     printf("Running unit tests for %s...\n", name);
 
