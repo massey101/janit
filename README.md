@@ -12,7 +12,7 @@ One of the tests has been intentionally designed to fail. The basic usage is as
 follows. You must include "janit.h" in your test file along with tests and a
 main method to run the tests with. The file structure is shown below:
 
-        #include "janit.h"
+        #include <janit.h>
         #include "<name.h>"
 
         // Unit test functions in the form:
@@ -36,6 +36,12 @@ Where <name> is the file to test, and <test> is the name of a test to perform.
 The <assert string> is displayed when the test fails and describes the assert
 used. The <assert> is a boolean which will signify failure when returning
 false.
+
+## Licence
+**GPLv3**
+
+See `LICENCE` for more information
+
 
 ## Authors
 
