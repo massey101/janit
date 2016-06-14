@@ -37,6 +37,11 @@ The <assert string> is displayed when the test fails and describes the assert
 used. The <assert> is a boolean which will signify failure when returning
 false.
 
+## Installation
+Install on a system using the following command:
+
+    make install
+
 ## Licence
 **GPLv3**
 
