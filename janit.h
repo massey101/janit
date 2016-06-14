@@ -12,8 +12,8 @@
 
 // Assert method.
 #define ja_assert(message, test) do { \
-    if (!(test)) return message; \
     *_ja_name = __func__; \
+    if (!(test)) return message; \
 } while (0)
 
 // Add all of the tests
